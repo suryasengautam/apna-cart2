@@ -33,7 +33,7 @@ export default function Product(props) {
         {props.product.quantity*props.product.price}
       </div>
     {/* <button class = "col-2 btn btn-danger" onClick = {() => {props.removeItem}}>remove</button> */}
-    <button class = "col-2 btn btn-danger" onClick = {() => {props.removeItem(props.index)}}>remove</button>
+    <button  type = "button" class = "col-2 btn btn-danger btn-sm" onClick = {() => {props.removeItem(props.index)}}> <img src = '../../../delete-icon.png'/></button>
 
     </div>
     </>
